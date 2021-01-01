@@ -20,9 +20,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
           pip install pylint
-      - name: Analysing the code with pylint
-        run: |
-          pylint `ls -R|grep .py$|xargs`
+#      - name: Analysing the code with pylint
+#        run: |
+#          pylint `ls -R|grep .py$|xargs`
       - name: Unit test 
         run: |
           pytest src/main.py
