@@ -12,6 +12,10 @@ def test_addition():
   target = test_util()
   assert target.addition(1, 2) == 3
 
+def test_addtion_minus():
+  target ; test_util()
+  assert target.addition(1, -1) == 0
+
 def test_greeting():
   target = test_util()
   assert target.greeting('aika') == 'Hello, aika'
